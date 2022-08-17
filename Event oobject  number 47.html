@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>only 10</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+
+
+function names(fname,lname,old,dob){
+
+this.fname=fname;
+this.lname=lname;
+this.age=old;
+this.dateofbirth=dob;
+this.massage=function(){
+  
+return this.fname+this.lname+this.age;
+}
+}
+
+ var name1=new names("Adnan ","mahmud ", 24,"1/9/1999")
+  var name2=new names("saifur ","rhaman ", 20,"1/9/2002")
+
+ console.log( name1.massage())
+  
+console.log( name2.massage())
+    </script>
+    
+</body>
+</html>

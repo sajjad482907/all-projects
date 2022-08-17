@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+p{
+    text-align: center;
+  
+    font-size:22px;
+    color: crimson;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button{
+
+    cursor: pointer;
+    color: rgb(126, 231, 231);
+    background: #000;
+    box-shadow:4px 4px 6px rgb(226, 235, 235) ;
+    border-radius:3px;
+    padding:3px 4px ;
+    display: flex;
+    margin-left: 20px;
+   float: left;
+}
+
+button:hover{
+    padding:5px 6px ;
+   
+    color: coral;
+    background-color: darkmagenta;
+    border: 0;
+}
+    </style>
+</head>
+<body><div>
+
+</div ><button>countdown</button>
+<button class="btn">Stopcountdown</button></div>
+    
+  
+
+    <p></p>
+    <script>
+
+let val=document.querySelector("button");
+let stop=document.querySelector("btn");
+let value=document.querySelector("btn");
+let p=document.querySelector('p');
+
+var count;
+
+val.addEventListener('click',datatransfer);
+
+function datatransfer(){
+  
+   var times=setInterval(() => {
+    
+   var time= p.innerHTML=new Date().toLocaleTimeString();
+    
+},5000);
+
+}
+
+stop.addEventListener('click',function(){
+
+clearInterval(times);
+
+
+})
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

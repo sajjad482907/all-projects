@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<body>
+      <details>
+        <summary>sajjad</summary>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Sunt, facilis vitae? Provident temporibus ducimus fugit 
+            iusto reprehenderit magni, autem sint. Voluptas 
+            unde beatae nesciunt mollitia odit quibusdam sed maxime suscipit!</p>
+      </details>
+
+    <script>
+
+// window.addEventListener("load",function(){
+
+
+
+//     console.log("display is loading")
+   
+
+
+// })
+
+// window.addEventListener("unload",function(){
+
+
+
+// console.log("unloading")
+
+
+
+// })
+
+// window.addEventListener("resize",function(){
+
+//   const height=window.outerHeight;
+//   const width=window.outerWidth;
+
+
+
+
+//   console.log(`height ${height},width${width}`)
+// })
+
+
+
+ let details=document.querySelector("details");
+
+ details.addEventListener("toggle",(e)=>{
+
+
+    if(e.target.open){
+     console.log("open")
+        
+    }else{
+        console.log("close")
+    }
+    // console.log(e.target.open)
+ })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function  Part-2</title>
+</head>
+<body>
+    <script>
+
+
+  var members=[
+     
+  {
+    id:11,
+    name:"sajjad",
+    gpa:3.45,
+  },
+  {
+    id:11,
+    name:"Adnan",
+    gpa:4.45,
+  },
+  {
+    id:11,
+    name:"Adib",
+    gpa:2.65,
+  },
+  {
+    id:11,
+    name:"siam",
+    gpa:3.35,
+  },
+
+
+  
+
+
+]
+
+
+const studentnames=()=> members.filter(x=>x.gpa>3).map((y)=>y.name);
+
+
+
+
+
+
+
+  console.log(studentnames());
+
+
+// 
+
+
+
+let numbers=["sajjad","siam","Nadia","Sadia","Sajeda"]
+
+
+ let arrays =numbers.map(x=>console.log(x))
+
+
+
+ //fat arrow function and search this object length//
+
+
+
+  //   const materials=[
+  // 'Hydrogen',
+  // 'Helium',
+  // 'Lithium',
+  // 'Beryllium']
+
+
+
+  // let allmaterials=materials.map(x=>x.length)
+
+  //   console.log(allmaterials)
+
+
+//
+
+
+// var feedTheCat = (cat) => {
+//   if (cat === 'hungry') {
+//     return 'Feed the cat';
+//   } else {
+//     return 'Do not feed the cat';
+//   }
+// }
+
+// console.log(feedTheCat());
+
+sum();
+    </script>
+</body>
+</html>

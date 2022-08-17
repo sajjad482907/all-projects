@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js audio</title>
+
+    <style>
+   
+   .my-btn{
+
+    margin-top: 10px;
+     padding-top: 10px;
+    padding-left: 10px;
+
+   }
+
+
+    </style>
+</head>
+
+
+<body>
+
+  
+    <button class="my-btn">Button a</button>
+    <button class="my-btn">Button b</button>
+    <button class="my-btn">Button c</button>
+    <button class="my-btn">Button d</button>
+    <button class="my-btn">Button e</button>
+    <button class="my-btn">Button f</button>
+    
+
+
+
+   
+    
+      
+
+    <script>
+
+
+let  len=document.querySelectorAll(".my-btn").length;
+for (let i=0;i<len;i++) {
+    
+    document.querySelectorAll(".my-btn")[i].addEventListener("click",function() {
+
+    var text=this.innerHTML;
+    console.log(text)
+
+    switch(text){
+    case"Button a":
+    var audio=new Audio("sound/two.mp3");
+
+   audio.play();
+    break;
+    case"Button b":
+    var audio=new Audio("sound/two.mp3");
+
+   audio.play();
+    break;
+    case"Button c":
+    var audio=new Audio("sound/two.mp3");
+
+   audio.play();
+    break;
+    case"Button d":
+    var audio=new Audio("sound/two.mp3");
+
+   audio.play();
+    break;
+    case"Button e":
+    var audio=new Audio("sound/two.mp3");
+
+   audio.play();
+    break;
+    case"Button f":
+    var audio=new Audio("sound/two.mp3");
+
+   audio.play();
+    break;
+  
+    
+    }
+    
+})
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hoe to audio add in js</title>
+    <style>
+
+#btn-all{
+
+color: aqua;
+border: 1px solid rgb(20, 20, 201);
+border-radius: 2px;
+padding: 3px 7px;
+background-color: black;
+}
+#btn-all:hover{
+    color: gray;
+}
+    </style>
+</head>
+<body>
+
+    <button id="btn-all">1</button>
+    <button id="btn-all">2</button>
+    <button id="btn-all">3</button>
+    <button id="btn-all">4</button>
+    <button id="btn-all">5</button>
+
+    <script>
+
+   var arr= document.querySelectorAll("#btn-all").length;
+
+
+   for (let i = 0; i <arr; i++) {
+  document.querySelectorAll("#btn-all")[i].addEventListener("click",function() {
+
+
+    var audio=this.innerHTML;
+    console.log(audio)
+ 
+  audioplay(audio);
+    
+  })
+    
+   }
+
+
+function audioplay(audio){
+
+
+switch(audio){
+
+case "1":
+
+var audio=new Audio("sound/one.mp3");
+
+audio.play();
+break;
+
+case "2":
+
+var audio=new Audio("sound/two.mp3");
+
+audio.play();
+break;
+
+case "3":
+
+var audio=new Audio("sound/three.mp3");
+
+audio.play();
+break;
+
+case "4":
+
+var audio=new Audio("sound/Four.mp3");
+
+audio.play();
+break;
+
+case "5":
+
+var audio=new Audio("sound/Five.mp3");
+
+audio.play();
+break;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

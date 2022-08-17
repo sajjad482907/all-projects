@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// non spread operators//
+
+
+let number=[12,13,24]
+let addNumbers=function(a,b,c){
+
+    return a+b+c;
+
+}
+
+console.log(addNumbers(number[0],number[1],number[2]))
+
+//spread operators//
+
+
+let numbers=[122,123,224]
+let add=function(a,b,c){
+
+    return a+b+c;
+
+}
+
+console.log(add(...numbers))
+
+//concating use spread operator//
+
+// let person1=[12,13,35,32];
+
+// let person2=[32,3,5,32];
+
+// let persons=[...person1,...person2];
+
+
+
+
+// console.log(persons)
+
+
+
+//object concat in spread operator//
+
+
+let p1={
+    name:"sajjad",
+    roll:482907,
+    religion:"bangladeshi",
+}
+let p2={
+    section:"b",
+}
+
+
+let p={...p1,...p2}
+console.log(p)
+
+
+    </script>
+</body>
+</html>

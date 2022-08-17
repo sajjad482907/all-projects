@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Error Handling</h2>
+
+<p>How to use <b>catch</b> to display an error.</p>
+
+<!-- <p id="demo"></p> -->
+<!-- <p id="demo1"></p> -->
+
+
+<h3>Enter a number betwwn 5 to 10:</h3>
+<input type="text" name="" id="">
+<button id="btn">click</button>
+<p id="massage1"></p>
+<script>
+
+    //error handeling try catch finally//
+// try {
+//     alert("Welcome guest!");
+//   adddlert("Welcome guest!");
+//   alert("bye guest!");
+  
+// }
+// catch(err) {
+//     document.getElementById("demo1").innerHTML = err.name;
+   
+//   document.getElementById("demo").innerHTML = err.message;
+// }
+
+// finally{
+//     alert("bye guest!");
+// }
+
+// throw error handeling//
+
+   
+ const input=document.querySelector("input");
+ const button=document.querySelector("#btn");
+
+ button.addEventListener('click',function(){
+
+  let value=input.value;
+
+  try {
+    
+
+    if(value<5){
+        throw "input is to low";
+    }
+
+  else if(value>10){
+        throw "input is to high";
+    }
+
+
+
+  } catch (error) {
+    document.getElementById("massage1").innerHTML=error;
+    
+  }
+
+
+ })
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

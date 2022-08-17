@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2d array practice</title>
+</head>
+<body>
+    <script>
+    //2d array//
+// function HighScore(playerinfo){
+//    HighScorar=playerinfo[0][0];
+//     HighScore=playerinfo[0][1];
+
+//     for (let i = 0; i <playerinfo.length; i++) {
+        
+//         if(HighScore<playerinfo[i][1]){
+//             HighScore=playerinfo[i][1];
+
+//              HighScore=playerinfo[i][0];
+//         }
+
+        
+//     }
+
+//    return HighScore;
+
+
+
+// }
+
+  
+
+
+// let playerinfo=[["Adnan",87],
+//                 ["NIloy",50],
+//                  ["Sajjad",89],
+//                 ["Arif",56]
+//                                ];
+//     let all=HighScore(playerinfo);
+
+//     console.log(all);
+
+
+
+
+
+
+
+
+// function mainScorar(allScore){
+
+//    maxScore=allScore[0][0];
+//    maxScore=allScore[0][1];
+
+
+// for (let x = 1; x< allScore.length;x++) {
+    
+//     if(maxScore<allScore[x][1]){
+//      maxScore=allScore[x][1];
+//       maxScore=allScore[x][0];
+
+//     }
+    
+// }
+// return maxScore;
+
+
+
+//     }
+
+
+      
+
+
+
+
+//       let name=[["Sihab",57],
+//                 ["Rifat",67],
+//                 ["Siam",79]];
+
+
+//  let All=mainScorar(name);
+
+
+//       console.log(All);
+
+
+
+function score(name){
+   max=name[0][0];
+   max=name[0][1];
+
+   for (let x = 1; x < name.length; x++) {
+    if(max<name[x][1]){
+    max=name[x][1];
+    max=name[x][0];
+
+    }
+   }
+
+
+return max;
+}
+
+
+
+let name=[["Sihab",57],
+                ["Rifat",67],              
+                
+                ["Siam",79]];
+
+
+              let value=score(name);
+              console.log(value);
+    </script>;
+    
+</body>
+</html>

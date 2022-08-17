@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to ad animation in js </title>
+    <style>
+
+
+
+.my-btn{
+    text-align:center;
+    padding:8px 20px ;
+    margin-left: 10px;
+    border:1px solid rgb(219, 165, 145);
+    border-radius: 3px;
+    color: aqua;
+    background-color: rgb(7, 7, 126);
+}
+  .anim{
+ 
+  box-shadow:2px 3px 3px gray;
+
+  }
+
+
+    </style>
+</head>
+<body>
+    <button class= "my-btn a" ">a</button>
+     <button class="my-btn b" >b</button>
+     <button class="my-btn c">c</button>
+     <button class="my-btn d">d</button>
+     <button class="my-btn e">e</button>
+     <button class="my-btn f">f</button>
+
+
+<script>
+
+let len=document.querySelectorAll(".my-btn").length;
+
+for (let index = 0; index <len; index++) {
+    document.querySelectorAll(".my-btn")[index].addEventListener("click",function(){
+
+     var text=this.innerHTML;
+     console.log(text)
+     
+     audioplay1(text);
+     mYfunction(text);
+    })
+    
+}
+
+document.addEventListener("keypress",function (para) {
+    var press=para.key;
+
+    mYfunction(press);
+    audioplay1(press);
+})
+
+
+function mYfunction(text){
+
+
+switch(text){
+case"a":
+var audio=new Audio("sound/one.mp3");
+audio.play();
+break;
+case"b":
+var audio=new Audio("sound/two.mp3");
+audio.play();
+break;
+case"c":
+var audio=new Audio("sound/three.mp3");
+audio.play();
+break;
+case"d":
+var audio=new Audio("sound/Four.mp3");
+audio.play();
+break;
+case"e":
+var audio=new Audio("sound/Five.mp3");
+audio.play();
+break;
+case"f":
+var audio=new Audio("sound/4.2.mp3");
+audio.play();
+break;
+
+}
+
+}
+
+function audioplay1(text){
+
+  var select=document.querySelector("."+text);
+   select.classList.add("anim");
+
+   setTimeout(function() {
+    select.classList.remove("anim");
+
+   },1500)
+
+  
+  }
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guessing game createing</title>
+</head>
+<body>
+    <script>
+//craete a game//
+
+
+
+// var  Numberoflost=0;
+// var Numberofwin=0;
+
+
+
+
+// for (let i = 1; i <5; i++) {
+   
+//     var guessingNum=parseInt(prompt("Enter Your Guess Number  too 5"));
+
+
+// var randomNUmber=Math.floor(Math.random()*5)+1;
+
+
+// if(guessingNum==randomNUmber){
+
+// console.log("You Win");
+//     Numberofwin++;
+
+    
+// }else{
+//     console.log("You lost");
+// Numberoflost++;
+// }
+
+    
+// }
+
+
+// document.write("total win"+Numberofwin+"<br>")
+// document.write("total win"+Numberoflost+"<br>");
+
+
+//createting guseeing from num1 to 10 game//
+
+
+var win=0;
+var lost=0;
+
+for (let x =1; x <=10; x++) {
+    
+    var gussNum=parseInt(prompt("Enter guess Number from 1 to10"));
+
+var ranNUmber=Math.floor(Math.random()*10)+1;
+
+if(gussNum==ranNUmber){
+    console.log("You have won");
+   win++;
+}else{
+    console.log("You Will lost");
+    lost++;
+}
+    
+}
+
+document.write("You Total Win="+win+"<br>");
+document.write("You Total Win="+lost+"<br>");
+
+    </script>
+    
+</body>
+</html>

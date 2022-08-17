@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For of loop</title>
+</head>
+<body>
+    
+   
+   
+   <p id="demo"></p>
+   
+   <script>
+
+
+//for of//
+
+let name=["Sajjad","Sadia","Nadia"];
+
+for(let names of name ){
+
+    console.log(names)
+
+
+}
+
+   //for in//
+ let  students={
+
+ name:"Sajjad",
+  roll:482907,
+  class:"5th  semister"
+
+ }   
+ txt="";
+ for (let  details in students ){
+
+
+    txt=txt+(students[details])
+ }
+    
+    document.getElementById("demo").innerHTML=txt;
+ 
+ 
+ 
+ 
+ </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    divice-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* 
+.para{
+color:darkmagenta;
+font-weight:bolder;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size:20px;
+} */
+
+
+.name{
+border: 2px solid red;
+margin-top: 3px;
+color: blue;
+border-radius: 3px;
+box-shadow:3px 4px 6px  4px royalblue ;
+
+}
+p{
+    color: rgb(20, 135, 135);
+}
+
+    </style>
+</head>
+<body>
+<button onclick="addStyle()">add Style</button>
+<button onclick="removeStyle()">removeStyle</button>
+<br>
+<br>
+
+<form ><p>Enter your name:</p><input id="name3" type="text"></form>
+
+
+
+
+    <!-- <h1 class="re">This is Heading</h1>
+    <p class="class">Name Md:Saifur rhaman sajjad<br>
+       Collge:Feni Polytechnic Institute<br>
+       Roll:1502078017. -->
+
+    </p>
+    <script>
+function addStyle(){
+
+ let Myvar=document.getElementById("name3").classList.add("name");
+
+
+
+
+}
+
+
+
+function removeStyle(){
+
+document.getElementById("name3").classList.remove("name")
+
+    
+
+
+}
+
+
+
+
+
+// var Myvar=document.getElementsByClassName("re")[0];
+
+// function addStyle(){
+
+//     Myvar.classList.add("para");
+
+
+// }
+
+
+// function removeStyle(){
+
+// Myvar.classList.remove("para");
+
+
+// }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+video{
+   margin-left:500px;
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <i><marquee behavior="" direction="">vedio soong.mp4 </marquee></i>
+<video width="500px"  controls>
+
+<source src="sound/Nakhre_x_Phir_Bhi_Tumko_(Lofi_Mashup)__KMslaG_x_@Lofi_IND___Zack_Knight__Arijit_Singh(720p).mp4" type="video/mp4">
+
+
+</video>
+
+<script>
+
+ let vedio=document.querySelector("video");
+
+
+ vedio.addEventListener("canplay",function(){
+ 
+  console.log("canplay");
+ })
+
+ vedio.addEventListener("pause",function(){
+ 
+ console.log("pause");
+})
+vedio.addEventListener("playing",function(){
+ 
+ console.log("playing");
+})
+vedio.addEventListener("volumechange",function(){
+ 
+ console.log("volumechange");
+})
+vedio.addEventListener("play",function(){
+ 
+ console.log("play");
+})
+vedio.addEventListener("ended",function(){
+ 
+ console.log("Thank you for wathching");
+})
+</script>
+    
+</body>
+</html>

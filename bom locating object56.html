@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BOM</h1>
+    <div class="location">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+    <script>
+let div=document.querySelector(".location");
+   
+let p=div.children[0];
+
+p.innerHTML=location.href;
+
+let p1=div.children[1];
+
+p1.innerHTML=location.protocol;
+
+let p2=div.children[2];
+
+p2.innerHTML=location.hostname;
+
+let p3=div.children[3];
+
+p3.innerHTML=location.port;
+
+let p4=div.children[4];
+
+p4.innerHTML=location.pathname;
+
+
+
+
+
+
+// //href
+// console.log(location.href)
+// //protocol
+// console.log(location.protocol)
+// //hostname
+// console.log(location.hostname)
+// //port
+// console.log(location.port)
+// //pathname
+// console.log(location.pathname)
+
+
+    </script>
+</body>
+</html>

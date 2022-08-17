@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- js bom -->
+    <!-- pop up box--alert,confirm,prompt -->
+
+    <script>
+// alert
+// alert("error here!")
+
+
+
+
+// confirm 
+// function deletesometing(){
+ 
+//     let value=confirm("do you want to delete?")
+
+//     if(value){
+//         console.log("  deleted")
+//     }
+//     else{
+//         console.log("  not deleted")
+//     }
+// }
+
+
+//  deletesometing();
+
+var h1=document.createElement('h1');
+ var text;
+  function input(){
+
+   let name=prompt("Enter your name!")
+
+   if (name==null ||name=='') {
+    
+    text="no name found";
+
+
+   }else{
+    text="welcome "+ name;
+   }
+   let textnode=document.createTextNode(text);
+   h1.appendChild(textnode)
+   document.body.appendChild(h1)
+
+  }
+input();
+
+
+    </script>
+
+    
+</body>
+</html>

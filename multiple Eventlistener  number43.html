@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.para{
+
+    margin-left: 10px;
+    float: left;
+}
+
+h1{
+
+
+    color:greenyellow;
+}
+    </style>
+</head>
+<body>
+
+    <!-- <p>You have not click any button</p>
+
+<button id="my-button">button1</button>
+<button id="my-button">button2</button>
+<button id="my-button">button3</button>
+<button id="my-button">button4</button> -->
+
+
+
+
+<h1>You  Have No clicked demo</h1>
+
+<p class="para">Demo1</p>
+<p class="para">Demo2 </p>
+<p class="para">Demo3</p>
+<p class="para">Demo4</p>
+<p class="para">Demo5</p>
+
+
+    <script>
+
+
+
+//  var len=document.querySelectorAll("#my-button").length;
+
+// for (let i = 0; i<len; i++) {
+
+// document.querySelectorAll("#my-button")[i].addEventListener("click",function(){
+
+//  var text=this.innerHTML;
+// document.querySelector("p").innerHTML=text+" is click";
+
+// })
+
+// }
+  
+
+var len0=document.querySelectorAll(".para").length;
+
+for (let i = 0; i<len0;i++) {
+    document.querySelectorAll(".para")[i].addEventListener("click",function(){
+
+
+
+    //  var allText=this.innerHTML;
+   
+      
+     var cll= document.querySelector("h1");
+     
+
+     cll.innerHTML=this.innerHTML+"is click"
+     cll.style.color="red";
+
+
+    })
+    
+}
+
+
+    </script>
+</body>
+</html>

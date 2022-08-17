@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<button class="btn">a</button>
+<button class="btn">b</button>
+<button class="btn">c</button>
+<button class="btn">d</button>
+    <script>
+
+ let len=document.querySelectorAll(".btn").length;
+
+for (let index = 0; index <len ; index++) {
+
+    document.querySelectorAll(".btn")[index].addEventListener("click",function(){
+
+
+var text=this.innerHTML;
+console.log(text);
+
+
+switch(text){
+ case "a":
+ var audio = new Audio('sound/a.mp3');
+audio.play();
+  break;
+
+case "b":
+ var audio = new Audio('sound/b.mp3');
+audio.play();
+
+break;
+case "c":
+ var audio = new Audio('sound/c.mp3');
+audio.play();
+
+break;
+case "d":
+ var audio = new Audio('sound/d.mp3');
+audio.play();
+break;
+
+}
+
+
+});
+
+
+    
+}
+ 
+
+
+
+    </script>
+
+
+
+</body>
+</html>
+

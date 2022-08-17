@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>destructering</title>
+</head>
+<body>
+
+ 
+    <script>
+
+//skip array value//
+
+
+let number=["sajjad","siam","adib","abrar","Sadia"]
+
+
+let [,x,,y,,]=number;
+let [x1,,,,y1]=number
+
+console.log(x,y);
+console.log(x1,y1);
+//nested array destracturing//
+
+
+let numbers=[1,2,3,4,[100,200,400],67,9]
+
+
+let [,,,,[c,,d]]=numbers;
+console.log(c,d)
+//
+
+let val=["sajjad","siam","adib","abrar"]
+
+  let [num1,num2,num3,num4,num5]=val;
+
+
+  console.log(num3)
+//rest parameter//
+
+let rest=["sajjad","siam","adib","abrar"]
+
+  let [n1,n2,...n3]=rest;
+
+
+  console.log(n3)
+
+
+//swap veriables//
+
+
+let a=20;
+
+let b=30;
+
+
+
+
+  [a,b]=[b,a]
+
+console.log(a)
+console.log(b)
+
+
+//
+
+
+ const studentinfo={
+
+    name:"sajjad",
+    id:482907,
+    reg:1502078017,
+    Fullname:"Saifur rhaman Sajjad",
+    language :{
+    nativ:"bangla",
+    beginner:"English"
+     
+     }
+ }
+
+
+ const{name,id,reg,Fullname,language}= studentinfo
+
+
+ console.log(reg)
+ console.log(Fullname)
+ console.log(language.beginner)
+ 
+
+
+ //object function  distructure//
+
+ const studentinformation=({name,id,reg,Fullname,education:{semister}})=>{
+
+    console.log(`my name is ${name},my reg number is ${reg}. my semister is ${semister}`)
+ }
+
+    let person={
+        name:"sajjad",
+    id:482907,
+    reg:1502078017,
+    Fullname:"Saifur rhaman Sajjad",
+    
+     education:{
+        semister:"5th",
+     }
+
+
+    }
+    studentinformation(person);
+    
+    //object function  distructure//
+
+
+    
+
+
+    let ids ={
+   
+
+      name:"sajjad",
+      fullname:"SAifur rhaman Sajjad",
+
+  
+
+    }
+
+
+function idFunction({name,fullname}){
+
+   
+  console.log(`My name is ${name},My Fullname is ${fullname}`);
+
+
+}
+idFunction(ids);
+//object iteration//
+
+let person1={
+
+  name:"saifur rhaman sajjad",
+    age: 25,
+    ssn: '123-456-2356'
+
+
+
+}
+
+Object.keysn(person1).forEach(x=>console.log(`${x}:${person1[x]}`))
+
+
+    </script>
+</body>
+</html>

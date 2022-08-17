@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.name{
+    height: 200px;
+    width: 300px;
+    background-color: green;
+}
+
+    </style>
+</head>
+<body>
+    <!-- <div class="name">
+
+        <p>I am a div</p>
+    </div>
+     -->
+
+     <button class="btn">btn1</button>
+     <button class="btn">btn2</button>
+     <button class="btn">btn3</button>
+
+
+    <script>
+
+
+    var select1=document.querySelectorAll(".btn");
+
+    Array.from(select1).map((e)=>{
+        e.addEventListener("click",function(event){
+
+            console.log(event.target.innerText)
+        })
+    })
+//  var select=document.querySelector(".name");
+
+//  select.addEventListener("click",function(e){
+//     // console.log(e.target.className)
+//     // console.log(e.target.innerText)
+//     console.log(e.target.className)
+//  })
+
+// select.addEventListener("dblclick",function(){
+
+//     console.log("This event  is dblclick event ")
+// })
+
+// select.addEventListener("mousedown",function(){
+
+// console.log("This event  is mousedown event ")
+// })
+
+
+// select.addEventListener("mouseup",function(){
+
+// console.log("This event  is mouseup event ")
+// })
+
+// select.addEventListener("mouseenter",function(){
+
+// console.log("This event  is mouseenter event ")
+// })
+// select.addEventListener("mouseleave",function(){
+
+// console.log("This event  is mouseleave event ")
+// })
+
+
+// select.addEventListener("mousemove",function(e){
+
+// // console.log('clintx ='+e.clientX+ ', '+ 'clinty =' +e.clientY)
+// console.log('offsetX ='+e.offsetX+ ', '+ 'offsetY =' +e.offsetY)
+// })
+
+// select.addEventListener("mouseover",function(){
+
+// console.log("This event  is mouseover event ")
+// })
+
+
+
+</script>
+</body>
+</html>

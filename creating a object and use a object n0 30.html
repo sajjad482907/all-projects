@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating a oject and use a object</title>
+</head>
+<body>
+    <script> 
+    
+    //   let Student={
+    //  name:"Saifur rhaman",
+    //  Roll:1502078017,
+    //  cgpa:3.33,
+    //  lang:["BAngla","English","Hindi"]
+
+
+
+    //   }
+    
+    //   console.log(Student);
+    //   console.log(Student.name);
+
+
+    //how to create an object template  and usses//
+  
+
+
+
+
+
+//     function Id(name,age,cgpa,skill,dob){
+//         this.name=name;
+//        this.roll=age;
+//        this.cgpa=cgpa;
+//         this.skill=skill;
+//        this.dob=dob;
+//     }
+   
+
+
+ 
+    
+// let Id1=new Id("Saifur Rhaman Sajjad",1502078017,3.45,["computer","swiming"],"1.08.2002");
+
+
+// let Id2=new Id("Adnan Mahmud","1283576663",3.67,["swiming","computer development"],"1/1/1999");
+
+// console.log(Id1.name);
+// console.log(Id1.cgpa);
+// console.log(Id1.dob);
+// console.log(Id1.skill);
+
+    
+// console.log(Id2.name);
+// console.log(Id2.cgpa);
+// console.log(Id2.dob);
+
+
+
+
+//how to add function with an object template//
+
+function Id(name,age,cgpa,skill,dob){
+        this.name=name;
+       this.roll=age;
+       this.cgpa=cgpa;
+        this.skill=skill;
+       this.dob=dob;
+       this.massage=function(){
+
+        console.log(this.name);
+        console.log(this.cgpa);
+        console.log(this.dob);
+        console.log(this.skill);
+
+
+
+       }
+    }
+   
+    let Id1=new Id("Saifur Rhaman Sajjad",1502078017,3.45,["computer","swiming"],"1.08.2002");
+
+
+   let Id2=new Id("Adnan Mahmud","1283576663",3.67,["swiming","computer development"],"1/1/1999");
+
+
+   Id1.massage();
+
+   
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+input{
+
+}
+
+
+</style>
+<body>
+
+
+<input type="text" name="" id="" value="copying this text ">
+<p ></p>
+<script>
+
+    var input=document.querySelector("input");
+    var demo=document.querySelector("p");
+    
+    input.addEventListener("copy",function(){
+    demo.innerHTML="you copying this text!"
+    })
+
+    input.addEventListener("cut",function(){
+    demo.innerHTML="you cut this text!"
+    })
+
+    input.addEventListener("paste",function(){
+    demo.innerHTML="you paste in a text!"
+    })
+
+
+// var input=document.addEventListener("copy",function(){
+
+//     console.log("You have coppied!")
+// })
+// var input=document.addEventListener("cut",function(){
+
+// console.log("You have cut!")
+// })
+
+// var input=document.addEventListener("paste",function(){
+
+// console.log("You have paste!")
+// })
+
+
+
+    </script>
+</body>
+</html>

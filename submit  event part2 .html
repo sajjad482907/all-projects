@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submit  event</title>
+</head>
+<body>
+   <form id="form">
+  <label>Name: <input type="text"></label><br><br>
+  <label>email: <input type="email"></label>
+  <br><br>
+  <button type="submit">Submit form</button>
+</form>
+<p id="log"></p>
+    
+
+<script>
+
+var form=document.getElementById("form");
+
+  var text=form.querySelector("input[type=text]");
+
+  var email=form.querySelector("input[type=email]");
+
+
+
+  form.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const user={
+     email:email.value,
+text:text.value,
+
+}
+console.log(user)
+text.value="";
+ email.value="";
+
+
+  })
+
+
+
+</script>
+</body>
+</html>

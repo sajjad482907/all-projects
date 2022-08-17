@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <button class="btn">Save</button>
+
+    <p class="massage"></p>
+    <script>
+
+//settimeout function
+
+
+let save=document.querySelector(".btn");
+let massage=document.querySelector(".massage");
+massage.style.color="red";
+// massage.style.fontStyle="oblique";
+
+// save.addEventListener('click',saveuser)
+
+// function saveuser(){
+
+  
+//     massage.textContent="registration successful"
+
+// setTimeout(function data() {
+    
+// //     massage.textContent="";
+// // }, 1000);
+
+
+// }
+
+save.addEventListener('click',saveuser)
+
+function saveuser(){
+   let count=1;
+
+  
+    massage.textContent=count;
+
+setInterval(function data() {
+    count++;
+    massage.textContent=count;
+}, 1000);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// setTimeout(() => {
+//     console.log("saifur rhaman")
+// }, 2000);
+
+
+
+
+
+  </script>
+</body>
+</html>

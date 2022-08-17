@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key press</title>
+</head>
+<body>
+<textarea name="" id="count" cols="30" rows="10"></textarea>
+    <h1 id="select"></h1>
+   
+
+<script>
+ 
+ var count=0;
+ document.querySelector("#count").addEventListener("keypress",function (params) {
+    count++;
+    var text=params.key;
+   document.querySelector("h1").innerHTML=count;
+
+ })
+
+</script>
+
+</body>
+</html>
